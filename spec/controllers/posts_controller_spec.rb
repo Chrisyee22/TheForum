@@ -8,7 +8,7 @@ RSpec.describe PostsController, type: :controller do
       get :index
       expect(response).to have_http_status(:success)
     end
-  
+
 
   it "assigns [my_post] to @posts" do
     get :index
