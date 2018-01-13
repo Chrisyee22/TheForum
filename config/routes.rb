@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  resources :questions 
+  resources :questions
 
   resources :advertisements
 
-  resources :posts
+  resources :topics do
+    resources :posts, expect: [:index]
+  end 
+
 
   get 'about' =>'welcome#about'
 
@@ -11,7 +14,7 @@ Rails.application.routes.draw do
 
   get 'welcome/faq'
 
-  resources :advertisements
+
 
   root 'welcome#index'
 
