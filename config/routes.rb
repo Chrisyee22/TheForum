@@ -4,15 +4,13 @@ Rails.application.routes.draw do
   resources :advertisements
 
   resources :topics do
-    resources :posts, expect: [:index]
-  end 
+    resources :posts, :sponsored_posts, except: [:index]
+    # resources :sponsored_posts, except: [:index]
+  end
 
 
   get 'about' =>'welcome#about'
 
-  get 'welcome/contact'
-
-  get 'welcome/faq'
 
 
 
