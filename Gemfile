@@ -49,3 +49,5 @@ group :development, :test do
    gem 'shoulda'
  end
 gem 'bootstrap-sass'
+ #used for encrypting passwords
+gem 'bcrypt'
