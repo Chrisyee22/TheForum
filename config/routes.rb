@@ -9,6 +9,11 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: [:new, :create]
+  # post 'users/confirm' => 'users#confirm'
+
+  resources :sessions, only: [:new, :create, :destroy]
+
+  get 'about' =>'welcome#about'
 
 
   get 'about' =>'welcome#about'
