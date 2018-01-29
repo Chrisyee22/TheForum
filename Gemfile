@@ -49,3 +49,4 @@ group :development, :test do
    gem 'shoulda'
  end
 gem 'bootstrap-sass'
+gem 'bcrypt' 
