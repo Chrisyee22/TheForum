@@ -16,3 +16,8 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.checkbox input[type="checkbox"]{
+  position: static;
+  margin-left: 0; 
+}
