@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  # resources :questions
-  #
-  # resources :advertisements
+  resources :questions
+
+  resources :advertisements
 
   resources :topics do
     resources :posts, except: [:index]
-    # resources :sponsored_posts, except: [:index]
+    resources :sponsored_posts, except: [:index]
   end
 
   resources :posts, only: [] do

@@ -12,12 +12,14 @@ class CommentsController < ApplicationController
      if comment.save
        flash[:notice] = "Comment saved successfully."
        redirect_to [@post.topic, @post]
+
      else
        flash[:alert] = "Comment failed to save."
        redirect_to [@post.topic, @post]
      end
    end
 
+  
    def destroy
     @post = Post.find(params[:post_id])
     comment = @post.comments.find(params[:id])
