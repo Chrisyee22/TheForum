@@ -50,6 +50,7 @@ group :development, :test do
  end
 gem 'bootstrap-sass'
 
+gem 'figaro', '1.0'
 
  # used for encrypting passwords
 gem 'bcrypt'
