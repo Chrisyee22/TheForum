@@ -75,4 +75,21 @@ RSpec.describe Post, type: :model do
         end
       end
    end
-end
+
+   
+#    describe "#create_favorite" do
+#
+#      it " #create_favorite when a new post is created" do
+#        post = topic.posts.new(title: RandomData.random_sentence, body: RandomData.random_sentence, user: user)
+#        expect(post.favorites).to receive(:create_favorite)
+#        post.save
+#      end
+#      it "sets the post to favorited" do
+#        expect(post.favorites).not_to be_nil
+#      end
+#      it "associates the favorite with the post owner" do
+#        expect(post.user.favorite.create).to eq(post.user)
+#      end
+#
+#    end
+# end
