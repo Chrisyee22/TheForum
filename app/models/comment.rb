@@ -3,6 +3,7 @@ class Comment < ApplicationRecord
   belongs_to :user
 
    validates :body, length: { minimum: 5 }, presence: true
+   validates :post, presence: true 
    validates :user, presence: true
 
    after_create :send_favorite_emails
